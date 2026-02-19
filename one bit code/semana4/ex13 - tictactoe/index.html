@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo da Velha</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="./index.js" defer></script>
+</head>
+<body>
+
+  <main>
+    <header>
+      <h1>Jogo da Velha</h1>
+    </header>
+
+    <section class="players">
+      <input type="text" id="playerX" placeholder="Jogador X">
+      <input type="text" id="playerO" placeholder="Jogador O">
+    </section>
+
+    <section id="board">
+      <button class="cell" data-index="0"></button>
+      <button class="cell" data-index="1"></button>
+      <button class="cell" data-index="2"></button>
+      <button class="cell" data-index="3"></button>
+      <button class="cell" data-index="4"></button>
+      <button class="cell" data-index="5"></button>
+      <button class="cell" data-index="6"></button>
+      <button class="cell" data-index="7"></button>
+      <button class="cell" data-index="8"></button>
+    </section>
+
+    <button id="reiniciar">Reiniciar</button>
+
+    <p id="winner"></p>
+
+  </main>
+
+</body>
+</html>
