@@ -32,3 +32,52 @@ npm install --save-dev webpack webpack-cli
 
 intala o webpack e o webpack-cli como dependencias de desenvolvimento
 
+arquivo padrao de configuração
+webpack.config.js
+ex:
+module.exports = {
+   entry: {
+    index: './src/index.js'
+   },
+   mode: 'development',
+   output: {
+    filename: '[name].js',
+    path: path.resolve(__dirname, 'dist')
+   }
+}
+
+
+const path = require('path')
+
+module.exports = {
+   entry: {
+    index: './src/index.js',
+    outroArquivo: './src/outroArquivo.js'
+   },
+   mode: 'production',
+   output: {
+    path: path.resolve(__dirname, 'public'),
+    filename: '[name].js'
+   }
+}
+
+
+loader
+empacotador de arquivos
+
+
+leitura de css e inclusao no arquivo
+instalação de pacotes e configurações  para que o webpack use eles
+
+npm install --save-dev css-loader style-loader
+
+
+plugins
+
+gerar um arquivo css separado
+
+npm install --save-dev mini-css-extract-plugin  
+precisa importar o plugin no arquivo de configuração do webpack
+
+
+quando apagar a pasta node_modules, precisa rodar o comando npm install para instalar as dependencias novamente

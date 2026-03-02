@@ -1,0 +1,1 @@
+console.log('Este é um arquivo diferente')
