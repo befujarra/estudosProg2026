@@ -9,8 +9,6 @@
 
 // module.exports = Person
 
-
-
 class Person {
     constructor(name, address) {
         this.name = name
