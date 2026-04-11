@@ -1,0 +1,1 @@
+trabalhar com resultados do codigo assincrono
