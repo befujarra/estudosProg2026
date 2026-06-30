@@ -1,8 +1,8 @@
 import styles from "./styles.module.css"
-import Button from "./Button"
+import Button from "../Button/Button"
 
 
-export default function Profile({ avatar, name, bio, email, phone, githubUrl, linkedinUrl }) {
+export default function Profile({ avatar, name, bio, email, phone }) {
   return (
     <div className={styles.container}>
       <img className={styles.avatar} src={avatar} alt={name} />
@@ -15,8 +15,13 @@ export default function Profile({ avatar, name, bio, email, phone, githubUrl, li
         <hr />
         <p className={styles.phone}>{phone}</p>
         <hr />
-        <Button githubUrl={githubUrl} linkedinUrl={linkedinUrl} />
-      </div>
+        <Button>
+          GitHub
+        </Button>
+        <Button>
+          LinkedIn
+        </Button>
+      </div>  
     </div>
   )
 }   

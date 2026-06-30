@@ -1,4 +1,4 @@
-import Profile from "./components/Profile"
+import Profile from "./components/Profile/Profile"
 import perfil from "./assets/perfil.jpg"
 
 export default function App() {

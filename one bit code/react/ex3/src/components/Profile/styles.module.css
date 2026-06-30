@@ -48,24 +48,3 @@ hr {
   background-color: #ffffff;
   padding-bottom: 1rem;
 }
-.links {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  text-align: center;
-  background-color: #ffffff;
-  padding: 1rem 0;
-}
-.githubButton, .linkedinButton {
-  background-image: linear-gradient(to right, #0565d3, #7ac1f3);
-  color: #fff;
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
-  cursor: pointer;
-  width: 30%;
-  margin: 0 auto;
-}
-.githubButton:hover, .linkedinButton:hover {
-  background-color: #555;
-}
